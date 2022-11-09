@@ -28,6 +28,8 @@ const images_1 = [
         id:3
     }
 ]
+const inputsRadio = [{event: "Estabamos por ir al cine 🎦", id:4},{event:"Cumpleaños de Tere 🙋🏽‍♀️", id:5},{event:"Estábamos por ir a Moreno 🍺", id:6}]
+const inputsRadio2 = [{event: "En una heladería 🍨", id:7},{event:"En Burger 🍔", id:8},{event:"En Starbucks ☕", id:9}]
 
 inputDate.addEventListener("blur", (e)=> {
     const correctDate = "2019-08-17"
@@ -52,6 +54,75 @@ inputDate.addEventListener("blur", (e)=> {
 
             const h2 = document.querySelectorAll(".h2")
             h2.forEach(element => element.style.color = color2)
+
+            /*Minigame*/
+            const containerInputsRadio = document.getElementById("containerInputsRadio")
+            const mapInputsRadio = inputsRadio.map(element => {
+                let render =
+                `<label for="${element.id}" > <input name="event" id="${element.id}" type="radio" value="${element.event}" />${element.event} </label>`
+                return render
+            })
+            containerInputsRadio.innerHTML = mapInputsRadio
+
+            const mapInputsRadio2 = inputsRadio.map(element => {
+                const eachInputRadio = document.getElementById(`${element.id}`)
+                const correctRadio = "Cumpleaños de Tere 🙋🏽‍♀️"
+                const container2Videos = document.getElementById("container2Videos")
+                const invisibleDiv = document.getElementById("invisibleDiv")
+                const invisibleDiv2 = document.getElementById("invisibleDiv2")
+
+                eachInputRadio.addEventListener("change", (e)=> {
+                    let finalResponse = e.target.value
+                    if (finalResponse == correctRadio){
+                        container2Videos.classList.remove("container2Videos")
+                        container2Videos.classList.add("none")
+                        invisibleDiv2.classList.remove("none")
+                        containerInputsRadio.remove()
+                    } else {
+                        alert("Fallaste 👺")
+                        container2Videos.classList.remove("container2Videos")
+                        container2Videos.classList.add("none")
+                        invisibleDiv.classList.remove("none")
+                        invisibleDiv.classList.add("failResponse")
+                        containerInputsRadio.remove()
+                    }
+                })
+
+                const invisibleDiv3 = document.getElementById("invisibleDiv3")
+                const invisibleDiv4 = document.getElementById("invisibleDiv4")
+                const containerInputsRadio2 = document.getElementById("containerInputsRadio2")
+                const container2Videos_2 = document.getElementById("container2Videos_2")
+
+                const mapInputsRadio2 = inputsRadio2.map(element => {
+                let render =
+                `<label for="${element.id}" > <input name="event" id="${element.id}" type="radio" value="${element.event}" />${element.event} </label>`
+                return render
+                })
+                containerInputsRadio2.innerHTML = mapInputsRadio2
+
+                const otherMap2 = inputsRadio2.map(element => {
+                    const eachInputRadio2 = document.getElementById(`${element.id}`)
+                    const correctRadio2 = "En Starbucks ☕"
+
+                    eachInputRadio2.addEventListener("change", (e)=> {
+                        let finalResponse2 = e.target.value
+                        if (finalResponse2 == correctRadio2){
+                            container2Videos_2.classList.remove("container2Videos")
+                            container2Videos_2.classList.add("none")
+                            invisibleDiv4.classList.remove("none")
+                            containerInputsRadio2.remove()
+                        } else {
+                            alert("Fallaste 🧛🏽‍♂️")
+                            container2Videos_2.classList.remove("container2Videos")
+                            container2Videos_2.classList.add("none")
+                            invisibleDiv3.classList.remove("none")
+                            invisibleDiv3.classList.add("failResponse")
+                            containerInputsRadio2.remove()
+                        }
+                    })
+                })
+
+            })
 
         }, 2000);
 
