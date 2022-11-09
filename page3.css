@@ -59,14 +59,61 @@
     justify-content: space-evenly;
     padding: 2rem;
 }
-
-@keyframes text-appear {
-    0% {
-        opacity: .1;
-    }
-}
-
 .h2 {
     font-size: 2rem;
     text-shadow: 2px 0px rgba(0, 0, 0, 0.5);
+}
+.div3 {
+    padding: 2rem;
+    border-top: 1px solid black;
+}
+.container2Videos {
+    border: 1rem ridge goldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.customVideo {
+    background-color: black;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+#containerInputsRadio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+}
+#containerInputsRadio2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+}
+.failResponse {
+    background-color: black;
+    height: 50vh;
+    animation: appear 2s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.customPerdiste {
+    color: red;
+    font-size: 2rem;
+}
+.customImgTeresa {
+    background-color: black;
+    object-fit: contain;
+    height: 400px;
+    width: 100%;
+    animation: appear 3s linear;
+}
+.customVideo2 {
+    background-color: black;
+    height: 300px;
+    width: 100%;
+    object-fit: contain;
 }
