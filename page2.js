@@ -50,7 +50,7 @@ const mapSongs = songs.map(element => {
     let render = 
     ` <div class="containerAudio">
       <p class="titleSong">${element.name}</p>
-      <audio class="audio" id=${element.id} src="../assets/songs/${element.name}.mp3" controls></audio>
+      <audio class="audio" id=${element.id} src="${element.name}.mp3" controls></audio>
       <button onClick={eachSong(${element.id})} class="buttonElegir" >elegir</button>
       </div>`
     return render
