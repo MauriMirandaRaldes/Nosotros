@@ -1,6 +1,9 @@
 const inputColor = document.getElementById("inputColor")
 const testColor = document.getElementById("testColor")
+const inputColor2 = document.getElementById("inputColor2")
+const testColor2 = document.getElementById("testColor2")
 const main = document.getElementById("main")
+const testText = document.getElementById("testText")
 
 /*color fondo*/
 var dataColor = ""
@@ -19,6 +22,24 @@ const sendColor = ()=> {
 }
 
 testColor.addEventListener("click", sendColor)
+
+/*color texto*/
+var dataColor2 = ""
+inputColor2.addEventListener("change", (e)=> {
+    const color = e.target.value
+    localStorage.setItem("color2", color)
+    dataColor2 = color
+})
+
+const sendColor2 = ()=> {
+    if (dataColor2){
+        testText.style.color = dataColor2
+    } else {
+        alert("Tienes que elegir un color")
+    }
+}
+
+testColor2.addEventListener("click", sendColor2)
 
 /*audio*/
 const containerAudio = document.getElementById("containerChangeAudio")
@@ -71,7 +92,7 @@ const eachSong = (idSong)=> {
         localStorage.setItem("song", finalSong)
         containerContinue.classList.remove("none")
         containerContinue.classList.add("containerContinue")
-        window.scrollTo(0, 250)
+        window.scrollTo(0, 600)
     }
 }
 
