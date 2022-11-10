@@ -77,7 +77,7 @@ inputDate.addEventListener("blur", (e) => {
         "containerInputsRadio"
       );
       const mapInputsRadio = inputsRadio.map((element) => {
-        let render = `<label for="${element.id}" > <input name="event" id="${element.id}" type="radio" value="${element.event}" />${element.event} </label>`;
+        let render = `<label class="label" for="${element.id}" > <input class="marginRight" name="event" id="${element.id}" type="radio" value="${element.event}" /> ${element.event} </label>`;
         return render;
       });
       containerInputsRadio.innerHTML = mapInputsRadio;
@@ -115,7 +115,7 @@ inputDate.addEventListener("blur", (e) => {
           document.getElementById("container2Videos_2");
 
         const mapInputsRadio2 = inputsRadio2.map((element) => {
-          let render = `<label for="${element.id}" > <input name="event" id="${element.id}" type="radio" value="${element.event}" />${element.event} </label>`;
+          let render = `<label class="label" for="${element.id}" > <input class="marginRight" name="event" id="${element.id}" type="radio" value="${element.event}" />${element.event} </label>`;
           return render;
         });
         containerInputsRadio2.innerHTML = mapInputsRadio2;
@@ -142,7 +142,7 @@ inputDate.addEventListener("blur", (e) => {
           });
         });
 
-        /*Sección después del minijuego*/
+        /*Sección después del minijuego, con varias imagenes y varios videos*/
         const imagesAndVideos = document.getElementById("imagesAndVideos");
         const mapData = imagesAndVideos_data.map(element => {
             if (element.type == "img"){
