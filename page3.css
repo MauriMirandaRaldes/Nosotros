@@ -36,7 +36,7 @@
     padding-bottom: 1rem;
 }
 .video1 {
-    width: 40%;
+    width: 170px;
     height: 200px;
     object-fit: cover;
     animation: appear 5s linear;
