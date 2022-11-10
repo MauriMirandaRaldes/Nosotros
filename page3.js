@@ -26,7 +26,7 @@ containerSobres.innerHTML = mapSobres
 const mapSobres2 = sobres.map(element => {
   const eachSobre = document.getElementById(`${element.id}`)
   eachSobre.addEventListener("click", ()=> {
-    alert(`Elegiste el ${element.name}`)
+    alert(`Elegiste el ${element.name} ✉`)
     containerSobres.remove()
     if (element.name == "sobre 1"){
       letter.classList.remove("none")
@@ -105,7 +105,7 @@ inputDate.addEventListener("blur", (e) => {
     div1.classList.add("div1");
 
     setTimeout(() => {
-      alert("Ahora podés seguir bajando reina");
+      alert("Ahora podés seguir bajando reina 👸🏽");
       section2.classList.remove("none");
       let mapImages_1 = images_1.map((element) => {
         let render = `<img class="img" id=${element.id} src="${element.name}.jpg" />`;
