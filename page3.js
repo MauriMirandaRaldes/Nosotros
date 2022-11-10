@@ -12,6 +12,9 @@ const h2Color1 = document.querySelectorAll(".h2Color1")
 const containerSobres = document.getElementById("containerSobres")
 const section5 = document.getElementById("section5")
 const sobres = [{name:"sobre 1", id:17},{name:"sobre 2", id:18},{name:"sobre 3", id:19}]
+const letter = document.getElementById("letter")
+const letter2 = document.getElementById("letter2")
+const letter3 = document.getElementById("letter3")
 
 const mapSobres = sobres.map(element => {
   let render =
@@ -24,6 +27,17 @@ const mapSobres2 = sobres.map(element => {
   const eachSobre = document.getElementById(`${element.id}`)
   eachSobre.addEventListener("click", ()=> {
     alert(`Elegiste el ${element.name}`)
+    containerSobres.remove()
+    if (element.name == "sobre 1"){
+      letter.classList.remove("none")
+      letter.classList.add("letter")
+    } else if (element.name == "sobre 2"){
+      letter2.classList.remove("none")
+      letter2.classList.add("letter")
+    } else {
+      letter3.classList.remove("none")
+      letter3.classList.add("letter")
+    }
   })
 })
 /*------------------------------------*/

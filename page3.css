@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
 * {
     margin:0;
     padding: 0;
@@ -178,4 +180,16 @@
 .section5 {
     /* background-color: pink; */
     animation: appear 10s linear;
+}
+.letter {
+    background:url("https://i.pinimg.com/originals/88/37/a6/8837a69bcf30bd8a428f9b6bb9d22e48.jpg") center / cover no-repeat;
+    min-height: 30vh;
+    padding: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.438);
+    border-radius: 5px;
+}
+.letter_p {
+    font-family: 'Tangerine', cursive;
+    font-size: 2rem;
+    margin-bottom: 5px;
 }
