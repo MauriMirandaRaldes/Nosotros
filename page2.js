@@ -2,8 +2,9 @@ const inputColor = document.getElementById("inputColor")
 const testColor = document.getElementById("testColor")
 const inputColor2 = document.getElementById("inputColor2")
 const testColor2 = document.getElementById("testColor2")
-const main = document.getElementById("main")
+const containerChangeColor = document.querySelectorAll(".containerChangeColor")
 const testText = document.getElementById("testText")
+const containerAudio = document.getElementById("containerChangeAudio")
 
 /*color fondo*/
 var dataColor = ""
@@ -15,7 +16,8 @@ inputColor.addEventListener("change", (e)=> {
 
 const sendColor = ()=> {
     if (dataColor){
-        main.style.backgroundColor = dataColor
+        containerChangeColor.forEach(element => element.style.backgroundColor = dataColor)
+        containerAudio.style.backgroundColor = dataColor
     } else {
         alert("Tienes que elegir un color")
     }
@@ -42,7 +44,6 @@ const sendColor2 = ()=> {
 testColor2.addEventListener("click", sendColor2)
 
 /*audio*/
-const containerAudio = document.getElementById("containerChangeAudio")
 const buttonContinue = document.getElementById("buttonContinue")
 const songs = [
     {
