@@ -105,6 +105,7 @@ inputDate.addEventListener("blur", (e) => {
             container2Videos.classList.remove("container2Videos");
             container2Videos.classList.add("none");
             invisibleDiv.classList.remove("none");
+            customImgTeresa.forEach(element => element.style.backgroundColor = color2)
             invisibleDiv.classList.add("failResponse");
             containerInputsRadio.remove();
           }
