@@ -126,3 +126,18 @@
 .marginBottom {
     margin-bottom: 2rem;
 }
+.containerInputsRadio {
+    background-color: goldenrod;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.label {
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+.marginRight {
+    margin-right: 10px;
+}
