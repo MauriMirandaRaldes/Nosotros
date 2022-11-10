@@ -69,16 +69,16 @@
 }
 .container2Videos {
     border: 1rem ridge goldenrod;
+    background-color: black;
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-top: 1rem;
+    padding: 10px;
 }
 .customVideo {
-    background-color: black;
     height: 300px;
-    width: 100%;
-    object-fit: cover;
+    width: 50%;
+    object-fit: contain;
 }
 #containerInputsRadio {
     display: flex;
