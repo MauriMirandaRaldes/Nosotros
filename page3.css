@@ -6,6 +6,7 @@
 
 .main {
     min-height: 100vh;
+    font-family:Arial, Helvetica, sans-serif;
 }
 #containerAudio {
     display: flex;
@@ -25,6 +26,7 @@
 .none {
     display: none;
 }
+
 .div1 {
     /* background-color: white; */
     display: flex;
@@ -33,15 +35,16 @@
     justify-content: center;
     padding-bottom: 1rem;
 }
-.video {
-    width: 200px;
+.video1 {
+    width: 40%;
     height: 200px;
     object-fit: cover;
     animation: appear 5s linear;
-    margin-top: 10px;
+    background-color: black;
+    border-radius: 50%;
+    border: 1rem inset lightslategray;
 }
 .img {
-    /* background-color: black; */
     width: 100%;
     height: 400px;
     animation: appear 5s linear;
@@ -68,7 +71,7 @@
     border-top: 1px solid black;
 }
 .container2Videos {
-    border: 1rem ridge goldenrod;
+    border: 1rem ridge lightslategray;
     background-color: black;
     display: flex;
     align-items: center;
@@ -106,11 +109,18 @@
     font-size: 2rem;
 }
 .customImgTeresa {
-    background-color: black;
+    /* background-color: black; */
     object-fit: contain;
     height: 400px;
     width: 100%;
     animation: appear 3s linear;
+}
+.customImages {
+    background-color: black;
+     object-fit: contain;
+     height: 400px;
+     width: 100%;
+     animation: appear 3s linear;
 }
 .customVideo2 {
     background-color: black;
@@ -127,11 +137,11 @@
     margin-bottom: 2rem;
 }
 .containerInputsRadio {
-    background-color: goldenrod;
+    background-color: lightslategray;
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1rem ridge lightslategray;
 }
 .label {
     display: flex;

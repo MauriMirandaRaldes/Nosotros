@@ -29,7 +29,7 @@ const images_1 = [
   },
 ];
 const inputsRadio = [
-  { event: "Estabamos por ir al cine 🎦", id: 4 },
+  { event: "Estábamos por ir al cine 🎦", id: 4 },
   { event: "Cumpleaños de Tere 🙋🏽‍♀️", id: 5 },
   { event: "Estábamos por ir a Moreno 🍺", id: 6 },
 ];
@@ -88,6 +88,7 @@ inputDate.addEventListener("blur", (e) => {
         const container2Videos = document.getElementById("container2Videos");
         const invisibleDiv = document.getElementById("invisibleDiv");
         const invisibleDiv2 = document.getElementById("invisibleDiv2");
+        const customImgTeresa = document.querySelectorAll(".customImgTeresa")
 
         eachInputRadio.addEventListener("change", (e) => {
           let finalResponse = e.target.value;
@@ -95,6 +96,7 @@ inputDate.addEventListener("blur", (e) => {
             container2Videos.classList.remove("container2Videos");
             container2Videos.classList.add("none");
             invisibleDiv2.classList.remove("none");
+            customImgTeresa.forEach(element => element.style.backgroundColor = color2)
             containerInputsRadio.remove();
           } else {
             alert("Fallaste 👺");
@@ -147,7 +149,7 @@ inputDate.addEventListener("blur", (e) => {
         const mapData = imagesAndVideos_data.map(element => {
             if (element.type == "img"){
                 let render =
-                `<img class="customImgTeresa" src="${element.name}.jpg" />`
+                `<img class="customImages" src="${element.name}.jpg" />`
                 return render
             } else {
                 let render =
