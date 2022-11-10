@@ -99,6 +99,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 .customPerdiste {
     color: red;
@@ -116,4 +117,12 @@
     height: 300px;
     width: 100%;
     object-fit: contain;
+}
+.containerTexts {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+.marginBottom {
+    margin-bottom: 2rem;
 }
