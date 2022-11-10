@@ -3,6 +3,7 @@ const color2 = localStorage.getItem("color2");
 const song = localStorage.getItem("song");
 const main = document.getElementById("main");
 const containerAudio = document.getElementById("containerAudio");
+const otherH2 = document.querySelectorAll(".otherH2")
 
 /*Utilizo la data guardada en el localStorage*/
 main.style.backgroundColor = color;
@@ -71,6 +72,7 @@ inputDate.addEventListener("blur", (e) => {
 
       const h2 = document.querySelectorAll(".h2");
       h2.forEach((element) => (element.style.color = color2));
+      otherH2.forEach(element => element.style.color = color2)
 
       /*Minigame*/
       const containerInputsRadio = document.getElementById(

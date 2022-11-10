@@ -37,6 +37,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .containerChangeColor button {
     padding: 10px;
