@@ -5,6 +5,40 @@ const main = document.getElementById("main");
 const containerAudio = document.getElementById("containerAudio");
 const otherH2 = document.querySelectorAll(".otherH2")
 
+const section4 = document.getElementById("section4")
+const h2Color1 = document.querySelectorAll(".h2Color1")
+
+/*Sobres*/
+const containerSobres = document.getElementById("containerSobres")
+const section5 = document.getElementById("section5")
+const sobres = [{name:"sobre 1", id:17},{name:"sobre 2", id:18},{name:"sobre 3", id:19}]
+
+const mapSobres = sobres.map(element => {
+  let render =
+  `<img class="sobre" id="${element.id}" src="sobre.png" />`
+  return render
+})
+containerSobres.innerHTML = mapSobres
+
+const mapSobres2 = sobres.map(element => {
+  const eachSobre = document.getElementById(`${element.id}`)
+  eachSobre.addEventListener("click", ()=> {
+    alert(`Elegiste el ${element.name}`)
+  })
+})
+/*------------------------------------*/
+
+window.onscroll = function() {
+  if  (window.scrollY > 7000 || window.scrollY > 6000){
+    section4.classList.remove("none")
+    section4.style.backgroundColor = color2
+    h2Color1.forEach(element => element.style.color = color)
+    section4.classList.add("section4")
+    section5.classList.remove("none")
+    section5.classList.add("section5")
+  }
+};
+
 /*Utilizo la data guardada en el localStorage*/
 main.style.backgroundColor = color;
 let render = `<audio src="${song}.mp3" autoplay loop controls ></audio>`;
@@ -135,6 +169,7 @@ inputDate.addEventListener("blur", (e) => {
               container2Videos_2.classList.remove("container2Videos");
               container2Videos_2.classList.add("none");
               invisibleDiv4.classList.remove("none");
+              customImgTeresa.forEach(element => element.style.backgroundColor = color2)
               containerInputsRadio2.remove();
             } else {
               alert("Fallaste 🧛🏽‍♂️");
@@ -168,3 +203,28 @@ inputDate.addEventListener("blur", (e) => {
     alert("Incorrecto 😣");
   }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

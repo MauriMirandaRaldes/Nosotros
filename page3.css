@@ -36,12 +36,12 @@
     padding-bottom: 1rem;
 }
 .video1 {
-    width: 170px;
+    width: 200px;
     height: 200px;
     object-fit: cover;
     animation: appear 5s linear;
     background-color: black;
-    border-radius: 50%;
+    border-radius: 50px;
     border: 1rem inset lightslategray;
 }
 .img {
@@ -154,4 +154,28 @@
 }
 .marginRight {
     margin-right: 10px;
+}
+.section4 {
+    animation: appear 10s linear;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+.sobre {
+    width: 200px;
+    height: 100px;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.623));
+}
+#containerSobres {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    border: 2rem ridge lightslategray;
+    background-color: lightslategrey;
+}
+.section5 {
+    /* background-color: pink; */
+    animation: appear 10s linear;
 }
