@@ -62,7 +62,7 @@ const mapSobres2 = sobres.map(element => {
 /*------------------------------------*/
 
 window.onscroll = function() {
-  if  (window.scrollY > 5000){
+  if  (window.scrollY > 3000){
     section4.classList.remove("none")
     section4.style.backgroundColor = color2
     h2Color1.forEach(element => element.style.color = color)
@@ -151,7 +151,7 @@ inputDate.addEventListener("blur", (e) => {
       });
       containerInputsRadio.innerHTML = mapInputsRadio;
 
-      const mapInputsRadio2 = inputsRadio.map((element) => {
+        inputsRadio.map((element) => {
         const eachInputRadio = document.getElementById(`${element.id}`);
         const correctRadio = "Cumpleaños de Tere 🙋🏽‍♀️";
         const container2Videos = document.getElementById("container2Videos");
@@ -224,7 +224,7 @@ inputDate.addEventListener("blur", (e) => {
                 return render
             } else {
                 let render =
-                `<video class="customVideo2" muted autoplay loop src="${element.name}.mp4"></video>`
+                `<video class="lastVideos" muted autoplay loop src="${element.name}.mp4"></video>`
                 return render
             }
         })
