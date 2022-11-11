@@ -49,6 +49,7 @@ const mapSobres2 = sobres.map(element => {
       let li = document.createElement("li")
       li.innerText = element.li
       li.classList.add("colorLi")
+      li.classList.add("miniMarginBottom")
       ul.appendChild(li)
       return ul
     })
