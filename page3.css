@@ -237,11 +237,7 @@
     text-align: center;
 }
 .section6 {
-    /* background-color: cyan; */
-    min-height: 110vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    height: auto;
     animation: appear 5s linear;
 }
 #ul {
