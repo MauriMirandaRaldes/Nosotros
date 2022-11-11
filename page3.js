@@ -16,6 +16,10 @@ const letter = document.getElementById("letter")
 const letter2 = document.getElementById("letter2")
 const letter3 = document.getElementById("letter3")
 
+const ul = document.getElementById("ul")
+const section6 = document.getElementById("section6")
+const dataUl = [{li:"Compartimos la pasión por entrenar, por ir al gimnasio y hacer ejercicio.. que nos va a acompañar por el resto de nuestras vidas."},{li:"Compartimos el gusto por el Anime, que si bien era algo que no considerabas interesante sino todo lo contrario, no te negaste y le diste una oportunidad, y hoy día es parte fundamental de nuestra rutina."},{li:"Compartimos el oseo por ver películas de terror, y no justamente las comerciales y genéricas.. sino las raras, las que poca gente entienden."},{li:"Compartimos el placer por jugar videojuegos, uno de mis pasatiempos de toda la vida. Que si bien nunca fue una afición propiamente tuya, como siempre no te negaste, le diste una oportunidad y sé que es algo que te divierte. Aunque no te gusten los juegos de pelea 👺👹 "}]
+
 const mapSobres = sobres.map(element => {
   let render =
   `<img class="sobre" id="${element.id}" src="sobre.png" />`
@@ -38,6 +42,20 @@ const mapSobres2 = sobres.map(element => {
       letter3.classList.remove("none")
       letter3.classList.add("letter")
     }
+    section6.classList.remove("none")
+    section6.classList.add("section6")
+
+    dataUl.map(element => {
+      let li = document.createElement("li")
+      li.innerText = element.li
+      li.classList.add("colorLi")
+      ul.appendChild(li)
+      return ul
+    })
+
+    const colorLi = document.querySelectorAll(".colorLi")
+    colorLi.forEach(element => element.style.color = color2)
+
   })
 })
 /*------------------------------------*/
@@ -146,10 +164,10 @@ inputDate.addEventListener("blur", (e) => {
             container2Videos.classList.remove("container2Videos");
             container2Videos.classList.add("none");
             invisibleDiv2.classList.remove("none");
+            invisibleDiv2.classList.add("appearSlow")
             customImgTeresa.forEach(element => element.style.backgroundColor = color2)
             containerInputsRadio.remove();
           } else {
-            alert("Fallaste 👺");
             container2Videos.classList.remove("container2Videos");
             container2Videos.classList.add("none");
             invisibleDiv.classList.remove("none");
@@ -180,14 +198,14 @@ inputDate.addEventListener("blur", (e) => {
           eachInputRadio2.addEventListener("change", (e) => {
             let finalResponse2 = e.target.value;
             if (finalResponse2 == correctRadio2) {
-              container2Videos_2.classList.remove("container2Videos");
+              container2Videos_2.classList.remove("container2Videos_2");
               container2Videos_2.classList.add("none");
               invisibleDiv4.classList.remove("none");
+              invisibleDiv4.classList.add("appearSlow")
               customImgTeresa.forEach(element => element.style.backgroundColor = color2)
               containerInputsRadio2.remove();
             } else {
-              alert("Fallaste 🧛🏽‍♂️");
-              container2Videos_2.classList.remove("container2Videos");
+              container2Videos_2.classList.remove("container2Videos_2");
               container2Videos_2.classList.add("none");
               invisibleDiv3.classList.remove("none");
               invisibleDiv3.classList.add("failResponse");
