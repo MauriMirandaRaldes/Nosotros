@@ -124,6 +124,7 @@
     padding: 10px;
     border: 10px ridge lightslategray;
     border-radius: 5px;
+    color: white;
 }
 #containerInputsRadio2 {
     display: flex;
@@ -145,7 +146,6 @@
 .customPerdiste {
     color: red;
     font-size: 15px;
-    margin-top: 2px;
 }
 .customImgTeresa {
     background-color: black;

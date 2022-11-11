@@ -61,7 +61,7 @@ const mapSobres2 = sobres.map(element => {
 /*------------------------------------*/
 
 window.onscroll = function() {
-  if  (window.scrollY > 7000 || window.scrollY > 6000){
+  if  (window.scrollY > 5000){
     section4.classList.remove("none")
     section4.style.backgroundColor = color2
     h2Color1.forEach(element => element.style.color = color)
