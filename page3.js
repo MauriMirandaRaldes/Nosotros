@@ -16,9 +16,14 @@ const letter = document.getElementById("letter")
 const letter2 = document.getElementById("letter2")
 const letter3 = document.getElementById("letter3")
 
-const ul = document.getElementById("ul")
-const section6 = document.getElementById("section6")
-const dataUl = [{li:"Compartimos la pasión por entrenar, por ir al gimnasio y hacer ejercicio.. que nos va a acompañar por el resto de nuestras vidas."},{li:"Compartimos el gusto por el Anime, que si bien era algo que no considerabas interesante sino todo lo contrario, no te negaste y le diste una oportunidad, y hoy día es parte fundamental de nuestra rutina."},{li:"Compartimos el oseo por ver películas de terror, y no justamente las comerciales y genéricas.. sino las raras, las que poca gente entienden."},{li:"Compartimos el placer por jugar videojuegos, uno de mis pasatiempos de toda la vida. Que si bien nunca fue una afición propiamente tuya, como siempre no te negaste, le diste una oportunidad y sé que es algo que te divierte. Aunque no te gusten los juegos de pelea 👺👹 "}]
+/*Ultima seccion*/
+const lastSection = document.getElementById("lastSection")
+const containerLastVideos = document.getElementById("containerLastVideos")
+const dataLastVideos = [{name:"video8"},{name:"video9"},{name:"video10"}]
+/*---Sección Cumpleaños---*/
+const sectionCumpleaños = document.getElementById("sectionCumpleaños")
+const containerLastTexts = document.querySelectorAll(".containerLastTexts")
+const felizCumpleaños = document.getElementById("felizCumpleaños")
 
 const mapSobres = sobres.map(element => {
   let render =
@@ -42,20 +47,25 @@ const mapSobres2 = sobres.map(element => {
       letter3.classList.remove("none")
       letter3.classList.add("letter")
     }
-    section6.classList.remove("none")
-    section6.classList.add("section6")
+   
+    /*Última sección*/
+    lastSection.classList.remove("none")
+    lastSection.classList.add("lastSection")
 
-    dataUl.map(element => {
-      let li = document.createElement("li")
-      li.innerText = element.li
-      li.classList.add("colorLi")
-      li.classList.add("miniMarginBottom")
-      ul.appendChild(li)
-      return ul
+    const finalMap = dataLastVideos.map(element => {
+      let render = 
+      `<video class="customLastVideo" src="${element.name}.mp4" autoplay muted loop ></video>`
+      return render
     })
+    containerLastVideos.innerHTML = finalMap
 
-    const colorLi = document.querySelectorAll(".colorLi")
-    colorLi.forEach(element => element.style.color = color2)
+    /*Sección cumpleaños*/
+    sectionCumpleaños.classList.remove("none")
+    sectionCumpleaños.classList.add("sectionCumpleaños")
+
+    containerLastTexts.forEach(element => element.style.backgroundColor = color2)
+    felizCumpleaños.style.color = color
+    felizCumpleaños.style.textAlign = "center"
 
   })
 })

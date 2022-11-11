@@ -93,7 +93,7 @@ const eachSong = (idSong)=> {
         localStorage.setItem("song", finalSong)
         containerContinue.classList.remove("none")
         containerContinue.classList.add("containerContinue")
-        window.scrollTo(0, 600)
+        window.scrollTo(0, 2000)
     }
 }
 

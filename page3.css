@@ -208,6 +208,9 @@
     height: 100px;
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.623));
 }
+.sobre:active {
+    background-color: white
+}
 #containerSobres {
     display: flex;
     align-items: center;
@@ -251,4 +254,50 @@
     object-fit: cover;
     animation: moving 3.5s infinite linear alternate;
     border: 1rem ridge lightslategray;
+    border-radius: 5px;
+}
+.lastSection {
+    /* background-color: red; */
+}
+#containerLastVideos {
+    /* background-color: blue; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.customLastVideo {
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    animation: moving 3.5s infinite linear alternate;
+    border: 1rem ridge lightslategray;
+    border-radius: 5px;
+}
+.sectionCumpleaños {
+    /* background-color: lightslategray; */
+    min-height: 30vh;
+    margin-bottom: 2rem;
+}
+.containerLastTexts {
+    /* background-color: lightblue; */
+    padding: 1rem;
+    border: 1rem ridge lightslategray;
+    border-radius: 5px;
+}
+.containerCake {
+    background: url("https://www.gifsanimados.org/data/media/1033/tarta-torta-y-pastel-imagen-animada-0032.gif") center / contain no-repeat;
+    height: 25vh;
+    filter: drop-shadow(5px 0px 1px rgba(0, 0, 0, 0.493));
+    width: 100%;
+}
+.textShadow {
+    text-shadow: 1px 0px 1px black;
+}
+.dateCumpleaños {
+    font-family: monospace;
+    text-align: center;
 }
