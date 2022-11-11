@@ -92,7 +92,7 @@
 }
 .otherH2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-shadow: 2px 0px rgba(0, 0, 0, 0.5);
 }
 .div3 {
@@ -133,19 +133,19 @@
     margin-top: 10px;
 }
 .failResponse {
-    background:url("https://media.tenor.com/6a7GIRUyC7sAAAAC/tom-enojado.gif") right / contain no-repeat;
-    background-color: black;
-    height: 35vh;
+    background:url("https://media.tenor.com/6a7GIRUyC7sAAAAC/tom-enojado.gif") center / cover no-repeat;
+    height: 40vh;
     animation: appear 2s linear;
-    margin-bottom: 2rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     border: 1rem ridge lightslategray;
     border-radius: 5px;
+    margin-bottom: 2rem;
 }
 .customPerdiste {
     color: red;
-    font-size: 15px;
+    text-shadow: 1px 0px 1px black;
 }
 .customImgTeresa {
     background-color: black;
