@@ -123,7 +123,7 @@
     padding: 10px;
     border: 10px ridge lightslategray;
     border-radius: 5px;
-    font-weight: bold;
+    color: black;
 }
 #containerInputsRadio2 {
     display: flex;
@@ -146,6 +146,9 @@
     color: red;
     text-shadow: 1px 0px 1px black;
 }
+.section3 {
+    /* background-color: red; */
+}
 .customImgTeresa {
     background-color: black;
     border: 1rem ridge lightslategray;
@@ -156,11 +159,12 @@
     border-radius: 5px;
 }
 .customImages {
-    background-color: black;
-     object-fit: contain;
-     height: 400px;
+     object-fit: cover;
+     height: 40vh;
      width: 100%;
-     animation: appear 2s linear;
+     object-position: top;
+     border: 1rem ridge lightslategray;
+     animation: moving 3.5s infinite linear alternate;
 }
 .container2Videos_2 {
     border: 1rem ridge lightslategray;
@@ -174,11 +178,7 @@
     object-position: top;
     animation: moving 3.5s infinite linear alternate;
 }
-.containerTexts {
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 10px;
-}
+
 .marginBottom {
     margin-bottom: 2rem;
 }
@@ -246,9 +246,13 @@
 }
 #ul {
     /* background-color: pink; */
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    min-height: 30vh;
     padding: 10px;
+}
+.lastVideos {
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+    animation: moving 3.5s infinite linear alternate;
+    border: 1rem ridge lightslategray;
 }
