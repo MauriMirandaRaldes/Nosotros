@@ -44,18 +44,40 @@
     animation: appear 5s linear;
     background-color: black;
     border-radius: 50px;
-    border: 1rem inset lightslategray;
+    border: 1rem ridge lightslategray;
+}
+#containerImages_1 {
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: appear 10s linear;
 }
 .img {
-    width: 100%;
-    height: 400px;
-    animation: appear 5s linear;
-    object-fit: contain;
+    width: 80%;
+    height: 45vh;
+    object-fit: cover;
+    object-position: top;
+    border: 1rem ridge lightslategray;
+    border-radius: 5px;
+    animation: moving 3.5s infinite linear alternate;
+}
+@keyframes moving {
+    0% {
+        object-position: top;
+    }
+    100% {
+        object-position: bottom;
+    }
 }
 @keyframes appear {
     0% {
         opacity: .2;
     }
+}
+.appearSlow {
+    animation: appear 5s linear;
 }
 .div2 {
     min-height: 30vh;
@@ -71,6 +93,7 @@
 .otherH2 {
     text-align: center;
     font-size: 2rem;
+    text-shadow: 2px 0px rgba(0, 0, 0, 0.5);
 }
 .div3 {
     padding: 2rem;
@@ -78,22 +101,29 @@
 }
 .container2Videos {
     border: 1rem ridge lightslategray;
-    background-color: black;
     display: flex;
-    align-items: center;
-    margin-top: 1rem;
-    padding: 10px;
+    border-radius: 5px;
 }
 .customVideo {
-    height: 300px;
+    height: 40vh;
     width: 50%;
-    object-fit: contain;
+    object-fit: cover;
 }
 #containerInputsRadio {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 10px;
+}
+.miniMarginBottom {
+    margin-bottom: 10px;
+}
+#inputDate {
+    background-color: white;
+    border: none;
+    padding: 10px;
+    border: 10px ridge lightslategray;
+    border-radius: 5px;
 }
 #containerInputsRadio2 {
     display: flex;
@@ -102,37 +132,48 @@
     margin-top: 10px;
 }
 .failResponse {
+    background:url("https://media.tenor.com/6a7GIRUyC7sAAAAC/tom-enojado.gif") right / contain no-repeat;
     background-color: black;
-    height: 50vh;
+    height: 35vh;
     animation: appear 2s linear;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    border: 1rem ridge lightslategray;
+    border-radius: 5px;
 }
 .customPerdiste {
     color: red;
-    font-size: 2rem;
+    font-size: 15px;
+    margin-top: 5px;
 }
 .customImgTeresa {
-    /* background-color: black; */
-    object-fit: contain;
-    height: 400px;
+    background-color: black;
+    border: 1rem ridge lightslategray;
+    object-fit: cover;
+    height: 40vh;
     width: 100%;
-    animation: appear 3s linear;
+    animation: moving 3.5s linear infinite alternate;
+    border-radius: 5px;
 }
 .customImages {
     background-color: black;
      object-fit: contain;
      height: 400px;
      width: 100%;
-     animation: appear 3s linear;
+     animation: appear 2s linear;
+}
+.container2Videos_2 {
+    border: 1rem ridge lightslategray;
+    display: flex;
+    border-radius: 5px;
 }
 .customVideo2 {
-    background-color: black;
-    height: 300px;
+    height: 40vh;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: top;
+    animation: moving 3.5s infinite linear alternate;
 }
 .containerTexts {
     border: 1px solid black;
@@ -152,7 +193,7 @@
 .label {
     display: flex;
     align-items: center;
-    width: 60%;
+    width: 100%;
 }
 .marginRight {
     margin-right: 10px;
@@ -179,7 +220,7 @@
 }
 .section5 {
     /* background-color: pink; */
-    animation: appear 10s linear;
+    animation: appear 7s linear;
 }
 .letter {
     background:url("https://i.pinimg.com/originals/88/37/a6/8837a69bcf30bd8a428f9b6bb9d22e48.jpg") center / cover no-repeat;
@@ -195,4 +236,20 @@
 }
 .alignCenter {
     text-align: center;
+}
+.section6 {
+    /* background-color: cyan; */
+    min-height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    animation: appear 5s linear;
+}
+#ul {
+    /* background-color: pink; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
 }
