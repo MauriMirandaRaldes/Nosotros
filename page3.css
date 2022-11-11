@@ -119,12 +119,11 @@
     margin-bottom: 10px;
 }
 #inputDate {
-    background-color: lightslategray;
     border: none;
     padding: 10px;
     border: 10px ridge lightslategray;
     border-radius: 5px;
-    color: white;
+    font-weight: bold;
 }
 #containerInputsRadio2 {
     display: flex;
