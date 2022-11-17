@@ -51,11 +51,11 @@ const songs = [
         id: 1
     },
     {
-        name: "closer to the edge",
+        name: "all of me",
         id: 2
     },
     {
-        name: "give me love",
+        name: "viva la vida",
         id: 3
     },
     {
@@ -81,7 +81,7 @@ containerAudio.innerHTML = mapSongs
 
 const mapSongs2 = songs.map(element => {
     const eachSong = document.getElementById(element.id)
-    eachSong.volume = 0.10
+    eachSong.volume = 0.50
 })
 
 const containerContinue = document.getElementById("containerContinue")
