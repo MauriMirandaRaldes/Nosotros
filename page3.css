@@ -146,9 +146,9 @@
     color: red;
     text-shadow: 1px 0px 1px black;
 }
-.section3 {
-    /* background-color: red; */
-}
+/* .section3 {
+   
+} */
 .customImgTeresa {
     background-color: black;
     border: 1rem ridge lightslategray;
@@ -256,9 +256,9 @@
     border: 1rem ridge lightslategray;
     border-radius: 5px;
 }
-.lastSection {
-    /* background-color: red; */
-}
+/* .lastSection {
+    
+} */
 #containerLastVideos {
     /* background-color: blue; */
     width: 100%;
